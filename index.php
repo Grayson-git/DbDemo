@@ -13,7 +13,32 @@
 
     echo "<p>Start of php</p>";
 
+    $servername = "localhost";
+    $username = "steverq_dev";
+    $password = "Csci213+#006";
+    $dbname = "steverq1+devdb";
+
+    $db_conn = new mysqli($servername, $username, $password, $dbname);
+
+    if ($db_conn->connect_error){
+        echo "Database connection failed: " . $db_conn->connect_error;
+    }else{
+        echo "Success<br>";
+    }
+
+    $result = $db_conn->query("SELECT * FROM  menuItems;");
+
+    if (!$result){
+        echo "Error on Query<br>";
+    }else{
+        echo "Query good<br>";
+    }
      
+    while ($row = $result->fetch_assoc()){
+        print_r($row);
+        echo "<br>";
+    }
+
         ?>
         
 </body>
