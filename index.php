@@ -14,9 +14,9 @@
     echo "<p>Start of php</p>";
 
     $servername = "localhost";
-    $username = "steverq_dev";
-    $password = "Csci213+#006";
-    $dbname = "steverq1+devdb";
+    $username = "steverq1_grayson";
+    $password = "$secrets.ftp_password";
+    $dbname = "steverq1_grayson";
 
     $db_conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -26,7 +26,7 @@
         echo "Success<br>";
     }
 
-    $result = $db_conn->query("SELECT * FROM  menuItems;");
+    $result = $db_conn->query("SELECT * FROM  customer;");
 
     if (!$result){
         echo "Error on Query<br>";
