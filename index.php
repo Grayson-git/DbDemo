@@ -12,7 +12,7 @@
 
     <h2>DB Connections</h2>
 
-    <a href="selfProcessForm-2.php">self process form</a>
+    <a href="addCatalogItem.php">Add a catalog item</a>
     <?php
 
     echo "<p>Start of php</p>";

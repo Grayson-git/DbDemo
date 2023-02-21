@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>PHP Form</title>
 </head>
 <body>
     <main>
+
+    <!-- NB - <a> generates an HTML GET, hence the next line -->
         <?php if ($_SERVER['REQUEST_METHOD'] === 'GET') : ?>
             <form action="<?php htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post">
                 <div>
