@@ -10,6 +10,10 @@
 
 <body>
     <main>
+        <?php
+            echo "Page Load:";
+            print_r($_SERVER);
+        ?>
         <!-- <a> generates a GET request to this page -->
         <!-- NB: The colon on if-else.MUCH cleaner than managing {}-->
         <?php if ($_SERVER['REQUEST_METHOD'] === 'GET') : ?>
@@ -35,7 +39,7 @@
         <?php else : ?>
 
             <?php
-            print_r($_POST);
+            print_r($_SERVER);
             if (isset($_POST['catName'], $_POST['descr'], $_POST['price'])) {
                 $catName = htmlspecialchars($_POST['catName']);
                 $descr = htmlspecialchars($_POST['descr']);
