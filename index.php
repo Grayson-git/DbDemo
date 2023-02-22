@@ -12,7 +12,7 @@
 
     <h2>DB Connections</h2>
 
-    <a href="addCatalogItem.php">Add a catalog item</a>
+    <a href="addCatalogItem-lab.php">Add a catalog item</a>
     <?php
 
     echo "<p>Start of php</p>";
