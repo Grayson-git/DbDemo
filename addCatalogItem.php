@@ -17,7 +17,7 @@
         <!-- <a> generates a GET request to this page -->
         <!-- NB: The colon on if-else.MUCH cleaner than managing {}-->
         <?php if ($_SERVER['REQUEST_METHOD'] === 'GET') : ?>
-            <form action="<?php htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post">
+            <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
                 <div>
                     <label for="catName">Item Name:</label>
                     <input type="text" name="catName" />
