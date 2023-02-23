@@ -10,14 +10,14 @@
 
 <body>
     <main>
-        <?php
-            echo "Page Load:";
-            print_r($_SERVER['REQUEST_METHOD']);
-        ?>
+        <!-- <?php
+            echo 'Page Load ' .$_SERVER['REQUEST_METHOD'].'br/>';
+        ?> -->
         <!-- <a> generates a GET request to this page -->
         <!-- NB: The colon on if-else.MUCH cleaner than managing {}-->
         <?php if ($_SERVER['REQUEST_METHOD'] === 'GET') : ?>
-            <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
+            <?php echo "in the GET block<br/>"; ?>
+            <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
                 <div>
                     <label for="catName">Item Name:</label>
                     <input type="text" name="catName" />
@@ -36,11 +36,10 @@
                 <button type="submit">Add Item</button>
 
             </form>
-        <?php else : ?>
 
-            <?php
-             print_r($_SERVER['REQUEST_METHOD']);
-            if (isset($_POST['catName'], $_POST['descr'], $_POST['price'])) {
+         <?php
+          
+            elseif (isset($_POST['catName'], $_POST['descr'], $_POST['price'])) :
                 $catName = htmlspecialchars($_POST['catName']);
                 $descr = htmlspecialchars($_POST['descr']);
                 $price = htmlspecialchars($_POST['price']);
@@ -60,13 +59,14 @@
                 else{
                     echo "Update fail!";
                 }
-            } else {
+            else :
                 echo 'You need to provide all info.';
-            }
-
+            
+            endif;
             ?>
 
-        <?php endif ?>
+        
+        
 
         <?php
             function dbInsertCall($data){
