@@ -1,4 +1,3 @@
-
 -- @block Bookmarked query
 -- @group Ungrouped
 -- @name insertCusromer.sql

@@ -1,0 +1,208 @@
+
+Table {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  /* padding: 0;
+  display:block;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #ede3d4; */
+}
+
+#bodyplaceholder {
+	display: table;
+	margin: 0px;
+	width: 100%;
+}
+
+#bodyplaceholder_left {
+	float: left;
+	width: 80%;
+}
+
+#bodyplaceholder_right {
+	float: right;
+	width: 19%;
+}
+
+header {
+  padding: 20px 0;
+  background: #f2f2f2;
+  border-bottom: 1px solid #cccccc;
+  text-align: center;
+}
+
+#footer {
+  width: 100%;
+  padding: 20px;
+  background-color: #CCC;
+  text-align: center;
+  font-size: 12px;
+  font-family: Arial;
+}
+
+div {
+	display: table;
+	margin: 0px;
+	background-color: #ddd;
+	border-style: none none solid none;
+	border-color: #000;
+	border-width: 1px;
+	width: 100%;
+	overflow: auto
+
+  /* width: auto;
+  padding: 10px;
+  background-color: #F2F2F2;
+  font-family: Arial; */
+}
+
+link{
+  float: left;
+  clear: both;
+  display: flex;
+}
+
+h1, h2, h3 {
+  float: left;
+  width: auto;
+  clear: right;
+  font-weight: bold;
+  color: #F08E4B;
+}
+
+p {
+  inline-size: auto;
+}
+
+li{
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #F08E4B;
+}
+
+ul, ol {
+  padding-left: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: auto;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Sidebar */
+#sidebar {
+  width: 10em;
+  float:right;
+  padding: 20px;
+  margin: 0%;
+  clear: right;
+  background-color:#CCC;
+}
+
+#sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sidebar ul li {
+  padding: 5px;
+  font-size: 12px;
+  font-family: Arial;
+}
+
+/* Menu */
+#menu {
+  width: auto;
+  padding: 10px;
+  background-color: #F2F2F2;
+  font-family: Arial;
+}
+
+#menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu li {
+  font-size: 16px;
+  font-family: sans-serif;
+  font-style: italic;
+  width: 10em;
+  column-count: 2;
+  display: inline-block;
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: #e3e3e3;
+  color: #000000;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+#menu ul li ul li {
+  font-weight: normal;
+}
+.topmenulinks a,a:visited,a:hover { text-decoration: none; }
+
+.nav {
+	border:none;
+	border:0px;
+	margin:0px;
+	padding:0px;
+	font: 67.5% 'Lucida Sans Unicode', 'Bitstream Vera Sans', 'Trebuchet Unicode MS', 'Lucida Grande', Verdana, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+}
+
+.nav ul {
+	background:#ddd;
+	height:26px;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+.nav li{
+	float:left;
+	padding:0px;
+}
+
+/* Banner */
+#banner {
+  width: 100%;
+  height: 100px;
+  background-image: url('../images/marble.jpg');
+  /* float: right; */
+  /* margin: 10px; */
+  background-repeat:repeat;
+  background-size: cover;
+  background-size: 150px;
+}
+
+#banner li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#banner ul ol {
+  list-style-type: none;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}

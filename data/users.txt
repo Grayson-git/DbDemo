@@ -1,0 +1,4 @@
+fname,lname,email@e.com,$2y$10$oBQlbx1D20ZgWWeg96zY/utEbrWeiBJK8BxxX/klzTB.uxf8h0zAO
+nfew,user,eee@mg.com,$2y$10$dcfCWo9S3DGA.O1dRep2Bue1Zvzog0l6OeEi6CNvaHkt6Kt791vvy
+one,two,three@for.com,$2y$10$ZvWE0IK2sJUzSohjTwaidOmpxcqPBFF0wCwC.4URRz8bpgsAKjDWe
+make,new,user@j.com,$2y$10$lwgzXLs/twARU5YeVwYuquqSPjGa9TfTiQvtavwvRco5GcEEjz7Re
