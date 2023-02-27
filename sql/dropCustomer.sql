@@ -2,4 +2,5 @@
 -- @group Ungrouped
 -- @name dropCustomer
 
+
 drop table customer;
