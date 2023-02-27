@@ -17,6 +17,7 @@
     </div>
 
     <div id="main-content">
+        
                 <!-- Main Content Here -->
         <input type="button" value="Home" onclick="window.location.href='../index.php'" />
             <div id="menu">

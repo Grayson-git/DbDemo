@@ -8,6 +8,7 @@
         include INC_PATH.'menuArray.php';   
 ?> 
 </head>
+
     <div id="banner">
             <!-- Sidebar Content Here///Specials -->
     <?php  
