@@ -23,6 +23,7 @@
             <div id="menu">
 
                 <?php
+                    echo "PHP starts here";
                     $servername  = "grayson";
                     $username = "steverq1_grayson";
                     $password = "Csci213+#004";
