@@ -23,8 +23,7 @@
             <div id="menu">
 
                 <?php
-                    echo "PHP starts here";
-                    $servername  = "grayson";
+                    $servername  = "localhost";
                     $username = "steverq1_grayson";
                     $password = "Csci213+#004";
                     $dbname = "steverq1_grayson";
@@ -35,18 +34,23 @@
                     if ($conn->connect_error) {
                         die("Connection failed: " . $conn->connect_error);
                     } 
+                    
 
                     $sql = "SELECT * FROM meals
-                    INNER JOIN meal_times
-                    ON meals.meal_time_id=meal_times.meal_time_id
-                    WHERE meal_times.meal_time_name='Breakfast'";
+                    
+                    INNER JOIN meals_meal_times ON meals_meal_times.meal_ID = meals.meal_ID
+                    INNER JOIN meal_times ON meals_meal_times.meal_time_ID = meal_times.meal_time_ID
+
+                    WHERE meal_times.meal_time_ID=1";
+
                     $result = $conn->query($sql);
+
 
                     if ($result->num_rows > 0) {
                         echo "<table><tr><th>Name</th><th>Price</th><th>Description</th><th>Image</th><th>Type</th></tr>";
                         // output data of each row
                         while($row = $result->fetch_assoc()) {
-                            echo "<tr><td>".$row["meal_name"]."</td><td>".$row["meal_price"]."</td><td>".$row["meal_description"]."</td><td>".$row["meal_image"]."</td><td>".$row["meal_type"]."</td></tr>";
+                            echo "<tr><td>".$row["meal_name"]."</td><td>".$row["meal_price"]."</td><td>".$row["meal_description"]."</td><td><img src='../images/".$row["meal_image"].".jpg'></td><td>".$row["meal_type"]."</td></tr>";
                         }
                         echo "</table>";
                     } else {
